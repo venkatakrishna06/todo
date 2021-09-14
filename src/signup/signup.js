@@ -23,6 +23,7 @@ class Signup extends React.Component {
         this.setState({password:e.target.value})
     }
     onSubmit = (e) =>{
+        let { history } = this.props
         let ob = {
             userName: this.state.name,
             email: this.state.email,
@@ -34,11 +35,13 @@ class Signup extends React.Component {
             olddata.push(ob)
             localStorage.setItem('formdata', JSON.stringify(olddata));
             this.setState({success: 'Signup completed.Please Login'})
+            history.push({ pathname: "/", user: this.state.userName });
         }else{
             let oldArr = JSON.parse(olddata)
             oldArr.push(ob)
             localStorage.setItem("formdata", JSON.stringify(oldArr))
             this.setState({success: 'Signup completed.Please Login'})
+            history.push({ pathname: "/", user: this.state.userName });
             console.log(oldArr,'hhg')
         }
     }
