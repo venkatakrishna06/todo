@@ -1,0 +1,81 @@
+.login{
+    padding-top: 7%;
+    background-color: #014f86;
+    text-align: center;
+height: 713px;
+    border: 1px solid #014f86;
+}
+.signup{
+    background-color: #014f86;
+    text-align: center;
+    height: 567px;
+    border: 1px solid #014f86;
+}
+.title p{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.error{
+    color: red;
+    font-size: 20px;
+}
+.success{
+    font-size: 20px;
+    color: green;
+}
+.fields{
+text-align: center;
+
+}
+.signlink{
+    margin-top: 2%;
+    color: white;
+    font-size: 20px;
+}
+.email{
+    margin-bottom: 3%;
+}
+.submit{
+    margin-top:4%;
+}
+button{
+    width:150px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #014f86;
+    border: none;
+}
+a{
+    color:darkgrey;
+}
+.input{
+    background-color: #014f86;
+   border: 1px solid white;
+    width: 300px;
+    height: 40px;
+    color: white;
+}
+.input::placeholder{
+    color: #0096c7;
+    margin: 3%;
+}
+/*nav bar css*/
+
+.nav{
+    background-color:#014f86 ;
+    height: 80px;
+}
+.logo{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    margin-left: 10%;
+    padding-top: 1%;
+}
+.profile{
+    text-align: right;
+    margin-right: 2%;
+}
